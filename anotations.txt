@@ -1,0 +1,19 @@
+Buildar minha app e nomeando de app:
+    - docker build -t app:0.1 .
+
+Executar minha app:
+    - docker run -d -p 5000:5000 app:0.1
+
+Senha e usuário: admin
+
+Jenkins password:
+    - 0df2e0ff6fca493090c9897d69c6273c (pegar esse carinha no log do docker-compose)
+
+    - Depois vá em install suggested plugins
+        - Esperar por um tempo até instalar as dependências
+    - Depois devemos Preencher as credênciais
+    - Configuração de instância
+
+É necessário instalar algumas dependências no projeto (via admin Jenkins):
+    - SSH Agent plugin ou SSH Agent
+    - CloudBees Docker Build and Publish plugin ou CloudBees Docker Build and Publish

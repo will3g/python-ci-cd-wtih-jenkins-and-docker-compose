@@ -1,11 +1,13 @@
 pipeline {
     agent {
-        docker { image 'python:3' }
+        dockerfile {
+            filename 'Dockerfile'
+        }
     }
     stages {
-        stage('Test') {
+        stage('Install') {
             steps {
-                sh 'pip --version'
+                sh 'apt install python-pip && pip install virtualenv && virtualenv venv -p python3 && source venv/bin/activate'
             }
         }
     }

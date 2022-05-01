@@ -15,5 +15,9 @@ Jenkins password:
     - Configuração de instância
 
 É necessário instalar algumas dependências no projeto (via admin Jenkins):
-    - SSH Agent plugin ou SSH Agent
-    - CloudBees Docker Build and Publish plugin ou CloudBees Docker Build and Publish
+    - SSH Agent plugin ou SSH Agent                                                     -> Serve para enviar a imagem docker para o servidor externo
+    - CloudBees Docker Build and Publish plugin ou CloudBees Docker Build and Publish   -> 
+
+Agora precisamos adicionar as credênciais no Jenkins para o servidor externo se comunicar com o docker-hub:
+    - Vá em manage credentials
+    - Depois clique no nome
